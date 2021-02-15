@@ -1,0 +1,74 @@
+body, html {
+  background-color: #fff;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-family: helvetica, arial, sans-serif;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+/*////////////// Buttons, Links and Icons /////////////*/
+.logo-icon {
+  width: 184px;
+}
+.link-btn {
+  height: 32px;
+  padding: 8px;
+  text-transform: uppercase;
+  color: #000;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 900;
+  margin-right: 5px;
+}
+.link-btn:last-child {
+  margin-right: 0;
+}
+.link-btn.icon {
+  width: 32px;
+}
+.link-btn.icon:hover {
+  background-color: #eaeff3;
+}
+.btn {
+  background-color: #37678D;
+  color: #fff;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+.btn:hover {
+  opacity: 1;
+}
+.link-btn.text {
+  font-size: 1.2rem;
+}
+.link-btn.text:hover {
+  text-decoration: underline;
+}
+
+/*////////////// main header ////////////////////////*/
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 7px 10px;
+  border-bottom: 1px solid gray;
+}
+header .logo {
+  flex: 1;
+  text-align: center;
+}
+header .left-header-nav, header.left-header-nav {
+  display: flex;
+}
+
+/*/////////// main //////////////////*/
+main {
+  padding-top: 50px;
+}
