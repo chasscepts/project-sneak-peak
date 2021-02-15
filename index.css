@@ -10,6 +10,17 @@ body, html {
   box-sizing: border-box;
 }
 
+.narrow {
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.border-bt {
+  border-bottom: 1px solid gray;
+}
+
 /*////////////// Buttons, Links and Icons /////////////*/
 .logo-icon {
   width: 184px;
@@ -50,15 +61,50 @@ body, html {
   text-decoration: underline;
 }
 
+.social-media-link {
+  display: block;
+  width: 24px;
+  height: 24px;
+  padding: 3px;
+  border: 1px solid #ebeef3;
+  border-radius: 50%;
+  margin-right: 20px;
+  background-color: #ebeef3;
+}
+.social-media-link:hover  {
+  background-color: #fff;
+}
+.social-media-icon{
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.facebook-icon {
+  background-image: url("assets/images/facebook.svg");
+}
+.whatsapp-icon {
+  background-image: url("assets/images/whatsapp.svg");
+}
+.twitter-icon {
+  background-image: url("assets/images/twitter.svg");
+}
+.email-icon {
+  background-image: url("assets/images/email.svg");
+}
+.more-share-icon {
+  background-image: url("assets/images/more-sharing.svg");
+}
+
 /*////////////// main header ////////////////////////*/
-header {
+.main-header {
   position: fixed;
   top: 0;
   width: 100%;
   display: flex;
   align-items: center;
   padding: 7px 10px;
-  border-bottom: 1px solid gray;
 }
 header .logo {
   flex: 1;
@@ -70,5 +116,23 @@ header .left-header-nav, header.left-header-nav {
 
 /*/////////// main //////////////////*/
 main {
-  padding-top: 50px;
+  padding-top: 70px;
 }
+
+.narrow {
+  width: 50%;
+  margin: auto;
+}
+
+
+/*////////////// Main Article Header ////////////////*/
+.title {
+  font-size: 2.4rem;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+
+.social-media {
+  display: flex;
+}
+
