@@ -1,0 +1,1 @@
+NYT fonts downloaded from https://github.com/FrancesCoronel/nyt-comm/tree/master/fonts
