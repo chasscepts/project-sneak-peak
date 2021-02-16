@@ -11,6 +11,10 @@ body, html {
   box-sizing: border-box;
 }
 
+a {
+  color: #326891;
+}
+
 .narrow {
   display: block;
   width: 50%;
@@ -152,11 +156,13 @@ body, html {
 /*////////////// main header ////////////////////////*/
 .main-header {
   position: fixed;
+  background-color: #fff;
   top: 0;
   width: 100%;
   display: flex;
   align-items: center;
   padding: 7px 10px;
+  z-index: 10;
 }
 header .logo {
   flex: 1;
