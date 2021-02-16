@@ -7,6 +7,10 @@
   font-family: nyt-cheltenham;
   src: url(assets/fonts/cheltenham-italic-700.ttf);
 }
+@font-face {
+  font-family: nyt-franklin;
+  src: url(assets/fonts/franklin-normal-500.ttf);
+}
 
 body, html {
   color: #333;
@@ -32,6 +36,10 @@ p {
   font-size: 1.35rem;
 }
 
+figure {
+  margin: 0%;
+}
+
 .narrow {
   display: block;
   width: 50%;
@@ -41,6 +49,19 @@ p {
 
 .border-bt {
   border-bottom: 1px solid gray;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.flex-4 {
+  flex: 0 0 25%;
 }
 
 /*////////////// Buttons, Links and Icons /////////////*/
@@ -255,4 +276,57 @@ figcaption .credit, .caption .credit {
   font-size: smaller;
   font-weight: lighter;
   color: #6d6363;
+}
+
+
+/*//////////////////// main article sections /////////////////*/
+p.narrow {
+  margin-bottom: 15px;
+}
+.grid {
+  display: grid;
+}
+.grid-uniform-column-4 {
+  grid-auto-columns: minmax(100px, 25%)
+}
+.grid-uniform-column-4 > .col-1, .grid-uniform-column-4 > .col-5 {
+  grid-column: 1;
+}
+.grid-uniform-column-4 > .col-2, .grid-uniform-column-4 > .col-6 {
+  grid-column: 2;
+}
+.grid-uniform-column-4 > .col-3, .grid-uniform-column-4 > .col-7 {
+  grid-column: 3;
+}
+.grid-uniform-column-4 > .col-4, .grid-uniform-column-4 > .col-8 {
+  grid-column: 4;
+}
+.inflation-illustration-fig {
+  padding: 10px;
+}
+.fig-footer {
+  position: relative;
+  margin: 20px 0;
+  padding-top: 20px;
+  font-family: nyt-franklin,arial,helvetica,sans-serif;
+  font-weight: 500;
+}
+.fig-footer::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 70px;
+  border-top: 2px solid #333;
+}
+.youtube-embed {
+  margin: 30px auto;
+}
+.youtube-wrap {
+  position: relative;
+  height: 300px;
+}
+.youtube-embed iframe {
+  width: 100%;
+  height: 100%;
 }
