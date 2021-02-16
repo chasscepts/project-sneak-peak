@@ -1,9 +1,10 @@
 body, html {
+  color: #333;
   background-color: #fff;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-size: 12px;
+  font-size: 14px;
   font-family: helvetica, arial, sans-serif;
 }
 *, ::after, ::before {
@@ -60,6 +61,27 @@ body, html {
 .link-btn.text:hover {
   text-decoration: underline;
 }
+.image-btn {
+  outline: none;
+  border: none;
+  height: 24px;
+  color: inherit;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-right: 20px;
+}
+.save-article-btn {
+  background-image: url("assets/images/save.svg");
+  width: 16px;
+}
+.post-btn {
+  width: 40px;
+  padding-top: 3px;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+}
 
 .social-media-link {
   display: block;
@@ -97,6 +119,36 @@ body, html {
   background-image: url("assets/images/more-sharing.svg");
 }
 
+.callouts {
+  display: inline-block;
+  position: relative;
+  border: 1px solid #80858e;
+	border-radius: 4px;
+}
+.callouts-bottom:before {
+	content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  right: 8px;
+  bottom: -10px;
+  background-color: #fff;
+  border-right: 1px solid #80858e;
+}
+.callouts-bottom:after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  right: 7px;
+  bottom: -6px;
+  border-bottom: 1px solid #80858e;
+  transform: rotate(45deg);
+  z-index: 1;
+}
+.callouts:hover, .callouts:hover::after, .callouts:hover::before{
+  border-color: #e2dfdf;
+}
+
 /*////////////// main header ////////////////////////*/
 .main-header {
   position: fixed;
@@ -119,9 +171,36 @@ main {
   padding-top: 70px;
 }
 
+.container {
+  position: relative;
+  width: 70%;
+  margin: auto;
+}
+
 .narrow {
   width: 50%;
   margin: auto;
+}
+
+.block {
+  display: block;
+}
+
+.fill-horizontal {
+  width: 100%;
+}
+
+.mb-15px {
+  margin-bottom: 15px;
+}
+
+figcaption, .caption {
+  display: gray;
+  margin-top: 10px;
+}
+
+figcaption .credit, .caption .credit {
+  color: rgb(151, 145, 145);
 }
 
 
@@ -136,3 +215,16 @@ main {
   display: flex;
 }
 
+.author {
+  font-weight: bold;
+}
+
+.author a {
+  color: inherit;
+}
+
+.date {
+  font-size: smaller;
+  font-weight: lighter;
+  color: #6d6363;
+}
