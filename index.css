@@ -31,8 +31,48 @@ html {
   box-sizing: border-box;
 }
 
+/* ////////////// font ///////////////// */
+
+.inherit-color {
+  color: inherit;
+}
+
+.gray {
+  color: #484343;
+}
+
+.faint {
+  color: rgb(92, 102, 105);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.small-print {
+  font-size: 0.8rem;
+}
+
+/* ////////////// text //////////// */
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* ////////////// a ///////////// */
+
 a {
   color: #326891;
+}
+
+a.underline,
+a.underline-on-hover:hover {
+  text-decoration: underline;
+}
+
+a.plain,
+a.plain-on-hover:hover {
+  text-decoration: none;
 }
 
 p {
@@ -44,21 +84,34 @@ figure {
   margin: 0%;
 }
 
+/* ////////////// ul ///////////// */
+
 ul.nav {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
+ul.list li {
+  padding: 15px 0;
+}
+
 ul.horizontal li {
   display: inline-block;
 }
 
-.narrow {
-  display: block;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
+/* ////////////// margin and padding ///////////// */
+
+.pl-5 {
+  padding-left: 5px;
+}
+
+.pr-5 {
+  padding-right: 5px;
+}
+
+.mb-5 {
+  margin-bottom: 5px;
 }
 
 .border-bt {
@@ -69,21 +122,25 @@ ul.horizontal li {
   border-top: 1px solid rgb(222 228 230);
 }
 
-.bold {
-  font-weight: bold;
+.narrow {
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.small-print {
-  font-size: 0.8rem;
-}
-
-.inherit-color {
-  color: inherit;
-}
+/* /////////////// flex //////////////// */
 
 .flex {
   display: flex;
-  flex-flow: row wrap;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.flex-1 {
+  display: flex;
 }
 
 .flex-4 {
@@ -383,6 +440,7 @@ figcaption .credit,
 
 .author {
   font-weight: bold;
+  font-size: 1rem;
 }
 
 .author a {
@@ -396,10 +454,6 @@ figcaption .credit,
 }
 
 /* //////////////////// main article sections ///////////////// */
-
-.main-article a:hover {
-  text-decoration: none;
-}
 
 p.narrow {
   margin-bottom: 15px;
@@ -461,10 +515,6 @@ p.narrow {
   display: flex;
 }
 
-#article-bottom-nav > ul > li {
-  list-style: none;
-}
-
 /* /////////// card navs ///////////// */
 
 .container-jumbo {
@@ -488,25 +538,6 @@ p.narrow {
   margin-top: 30px;
 }
 
-#card-navs > div {
-  flex: 1;
-}
-
-#card-navs h3 {
-  font-size: 1.1rem;
-}
-
-#card-navs a {
-  text-decoration: none;
-}
-
-#most-popular li {
-  padding: 15px 0;
-  border-top: 1px solid rgb(220 210 210);
-}
-
-
-
 .bold-link {
   display: block;
   color: black;
@@ -523,12 +554,14 @@ p.narrow {
 .cards-container {
   display: flex;
   justify-content: space-between;
+  align-items: stretch;
 }
 
 .cards-container > .card {
   flex: 0 0 32%;
   height: 100%;
   position: relative;
+  align-self: stretch;
 }
 
 #suggested-newsletters > header {
@@ -618,12 +651,6 @@ p.narrow {
   padding-bottom: 70px;
 }
 
-.main-footer ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
 .footer-nav-1 {
   color: rgb(24, 22, 22);
   padding-bottom: 5px;
@@ -654,25 +681,10 @@ p.narrow {
   left: 100%;
 }
 
-.main-footer a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.main-footer a:hover {
-  text-decoration: underline;
-}
-
 .footer-nav-1-links {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-}
-
-.footer-nav-1-links h3 {
-  margin-bottom: 5px;
-  color: #484343;
-  text-transform: uppercase;
 }
 
 .footer-nav-1-links .subscribe {
@@ -680,19 +692,17 @@ p.narrow {
   padding-left: 10px;
 }
 
-.footer-nav-1-links .subscribe a {
-  font-size: 0.8rem;
-}
-
-.footer-nav-1-links .subscribe a.bold {
+.subscribe-bold-link {
   position: relative;
+  display: block;
   font-weight: 700;
+  color: #000;
   font-family: nyt-franklin, helvetica, arial, sans-serif;
   font-size: 1.1rem;
   padding-left: 20px;
 }
 
-.footer-nav-1-links .subscribe a.bold::before {
+.subscribe-bold-link::before {
   content: '';
   position: absolute;
   left: 0;
@@ -717,20 +727,6 @@ p.narrow {
 
 .cooking::before {
   background: url(assets/images/cooking.svg);
-}
-
-.footer-nav-2 ul {
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer-nav-2 li {
-  padding: 0 5px;
-}
-
-.footer-nav-2 a {
-  color: rgb(92 102 105);
-  font-size: 0.8rem;
 }
 
 .fixed-footer {
@@ -784,7 +780,7 @@ p.narrow {
   padding: 15px 0;
 }
 
-.main-aside li {
+.main-aside-list-item {
   margin-top: 15px;
 }
 
