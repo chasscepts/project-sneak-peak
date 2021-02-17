@@ -9,13 +9,13 @@
 <body>
   <header class="main-header border-bt">
     <nav class="left-header-nav">
-      <a class="link-btn icon" href="#"><img src="assets/images/hamburger.svg"></a>
-      <a class="link-btn icon" href="#"><img src="assets/images/search.svg"></a>
+      <a class="link-btn icon" href="#"><img alt="menu" src="assets/images/hamburger.svg"></a>
+      <a class="link-btn icon" href="#"><img alt="search" src="assets/images/search.svg"></a>
       <a class="link-btn text" href="#">SPACE & COSMOS</a>
     </nav>
     <div class="logo">
       <a href="#">
-        <img src="assets/images/logo.svg" class="logo-icon">
+        <img alt="logo" src="assets/images/logo.svg" class="logo-icon">
       </a>
     </div>
     <nav class="right-header-nav">
@@ -197,7 +197,7 @@
         </p>
         <figure class="narrow youtube-embed">
           <div class="youtube-wrap">
-            <iframe title="YouTube Video" src="https://www.youtube.com/embed/ZlfIVEy_YOA" frameborder="0" allowfullscreen=""></iframe>
+            <iframe title="YouTube Video" src="https://www.youtube.com/embed/ZlfIVEy_YOA"  allowfullscreen=""></iframe>
           </div>
           <figcaption>
             Stanford Professor Andrei Linde celebrates physics breakthrough <span class="credit">Video by StanfordUniversity</span>
@@ -328,10 +328,10 @@
         <section id="suggested-newsletters" class="top-level">
           <header>
             <h3>Suggested newsletters for you</h3>
-            <button class="text-button small-print">Don't show me this again</button>
+            <button type="submit" class="text-button small-print">Don't show me this again</button>
           </header>
           <div class="cards-container">
-            <article class="card newsletter-card" role="button">
+            <article class="card newsletter-card">
               <header>
                 <img class="thumbnail" src="https://static01.nyt.com/email-images/Newsletter%20Icons/Breaking.png" alt="Breaking News">
                 <p class="newsletters-frequency">As Needed</p>
@@ -344,7 +344,7 @@
                 <a href="#">See the latest</a>
               </section>
             </article>
-            <article class="card newsletter-card" role="button">
+            <article class="card newsletter-card">
               <header>
                 <img class="thumbnail" src="https://static.nytimes.com/email-images/newsletters/AtHome/NYT-AtHome-Icon-REV.png" alt="At home newsletter">
                 <p class="newsletters-frequency">Weekly</p>
@@ -359,7 +359,7 @@
                 <a href="#">See the latest</a>
               </section>
             </article>
-            <article class="card newsletter-card" role="button">
+            <article class="card newsletter-card">
               <header>
                 <img class="thumbnail" src="https://static.nytimes.com/email-images/newsletters/TheMorning/TheMorning-Icon.png" alt="The morning newsletter">
                 <p class="newsletters-frequency">Daily</p>
@@ -389,7 +389,7 @@
                   Earth to Voyager 2: After a Year in the Darkness, We Can Talk to You Again
                 </span>
               </a>
-              <time datetime="" class="small-print">Feb. 12</time>
+              <time datetime="2021-02-12" class="small-print">Feb. 12</time>
             </div>
             <div class="col-2 card">
               <a href="#" class="card-link">
@@ -399,7 +399,7 @@
                 </figure>
                 <span class="bold-link">China’s Mars Mission Begins Orbit of the Red Planet</span>
               </a>
-              <time datetime="" class="small-print">Feb. 10</time>
+              <time datetime="2021-02-10" class="small-print">Feb. 10</time>
             </div>
             <div class="col-4 card">
               <a href="#" class="card-link">
@@ -409,7 +409,7 @@
                 </figure>
                 <span class="bold-link">Life on Venus? The Picture Gets Cloudier</span>
               </a>
-              <time datetime="" class="small-print">Feb. 8</time>
+              <time datetime="2021-02-08" class="small-print">Feb. 8</time>
             </div>
             <div class="col-5 card">
               <a href="#" class="card-link">
@@ -419,7 +419,7 @@
                 </figure>
                 <span class="bold-link">The Webb Telescope, NASA’s Golden Surfer, Is Almost Ready, Again</span>
               </a>
-              <time datetime="" class="small-print">Feb. 3</time>
+              <time datetime="2021-02-03" class="small-print">Feb. 3</time>
             </div>
             <div class="col-6 card">
               <a href="#" class="card-link">
@@ -429,7 +429,7 @@
                 </figure>
                 <span class="bold-link">Jeff Bezos Renews Focus on Blue Origin, Which Has Been Slower to Launch</span>
               </a>
-              <time datetime="" class="small-print">Feb. 9</time>
+              <time datetime="2021-02-09" class="small-print">Feb. 9</time>
             </div>
           </div>
         </section>
@@ -444,7 +444,7 @@
                 </figure>
                 <span class="bold-link">They’re Arctic Survivors. How Will They Adapt to Climate Change?</span>
               </a>
-              <time datetime="" class="small-print">8h ago</time>
+              <time datetime="2021-02-16" class="small-print">8h ago</time>
             </div>
             <div class="col-2 card">
               <a href="#" class="card-link">
@@ -454,7 +454,7 @@
                 </figure>
                 <span class="bold-link">The Vaccine Had to Be Used. He Used It. He Was Fired.</span>
               </a>
-              <time datetime="" class="small-print">Feb. 12</time>
+              <time datetime="2021-02-12" class="small-print">Feb. 12</time>
             </div>
             <div class="col-3 card">
               <a href="#" class="card-link">
@@ -464,26 +464,44 @@
                 </figure>
                 <span class="bold-link">The Most Serious Security Risk Facing the United States</span>
               </a>
-              <time datetime="" class="small-print">Feb. 9</time>
+              <time datetime="2021-02-09" class="small-print">Feb. 9</time>
             </div>
           </div>
         </section>
       </div>
       <section id="most-popular" class="top-level">
         <h3>Most Popular</h3>
-        <ul class="nav">
-          <li><a href="#" class="bold-link">
+        <ul class="nav vertical-list">
+          <li class="border-tp">
+            <a href="#" class="bold-link">
             Amy Cooper, Who Falsely Accused Black Bird-Watcher, Has Charges Dismissed
-          </a></li>
-          <li><a class="bold-link" href="#">Was ‘60 Minutes’ TV’s Most Toxic Workplace?</a></li>
-          <li><a class="bold-link" href="#">Brayden Smith, Five-Time ‘Jeopardy!’ Champion, Dies at 24</a></li>
-          <li><a class="bold-link" href="#">Grind Your Teeth? Your Night Guard May Not Be the Right Fix</a></li>
-          <li><a class="bold-link" href="#">Walking (and Skating) on Thin Ice, Some in Europe Paid the Price</a></li>
-          <li><a class="bold-link" href="#">Woman Accused of Defaming Dozens Online Is Arrested</a></li>
-          <li><a class="bold-link" href="#">Louisiana Woman Arrested in Case of Teen Found Dead in a Field</a></li>
-          <li><a class="bold-link" href="#">Does Brad Pitt Still Sell Watches?</a></li>
-          <li><a class="bold-link" href="#">What Made the Indonesian Plane Crash? New Report Sheds Light</a></li>
-          <li><a class="bold-link" href="#">‘I’m Afraid He’s Going to Run Again and Lose,’ Lieu Says of Trump</a></li>
+            </a>
+          </li>
+          <li class="border-tp">
+            <a class="bold-link" href="#">Was ‘60 Minutes’ TV’s Most Toxic Workplace?</a>
+          </li>
+          <li class="border-tp"><a class="bold-link" href="#">Brayden Smith, Five-Time ‘Jeopardy!’ Champion, Dies at 24</a></li>
+          <li class="border-tp">
+            <a class="bold-link" href="#">Grind Your Teeth? Your Night Guard May Not Be the Right Fix</a>
+          </li>
+          <li class="border-tp">
+            <a class="bold-link" href="#">Walking (and Skating) on Thin Ice, Some in Europe Paid the Price</a>
+          </li>
+          <li class="border-tp">
+            <a class="bold-link" href="#">Woman Accused of Defaming Dozens Online Is Arrested</a>
+          </li>
+          <li class="border-tp">
+            <a class="bold-link" href="#">Louisiana Woman Arrested in Case of Teen Found Dead in a Field</a>
+          </li>
+          <li class="border-tp">
+            <a class="bold-link" href="#">Does Brad Pitt Still Sell Watches?</a>
+          </li>
+          <li class="border-tp">
+            <a class="bold-link" href="#">What Made the Indonesian Plane Crash? New Report Sheds Light</a>
+          </li>
+          <li class="border-tp">
+            <a class="bold-link" href="#">‘I’m Afraid He’s Going to Run Again and Lose,’ Lieu Says of Trump</a>
+          </li>
         </ul>
       </section>
     </nav>
@@ -518,7 +536,7 @@
       <section class="header">
         <div class="logo">
           <a href="#">
-            <img src="assets/images/logo.svg" class="logo-icon">
+            <img alt="logo" src="assets/images/logo.svg" class="logo-icon">
           </a>
         </div>
         <a href="#" class="small-print home-link">Go to Home Page</a>
@@ -617,7 +635,7 @@
             <li><a href="#">Email Newsletters</a></li>
             <li><a href="#">Corporate Subscriptions</a></li>
             <li><a href="#">Education Rate</a></li>
-            <hr>
+            <li><hr></li>
             <li><a href="#">Mobile Applications</a></li>
             <li><a href="#">Replica Edition</a></li>
             <li><a href="#">International</a></li>
