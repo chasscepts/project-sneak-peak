@@ -311,7 +311,7 @@
         </p>
         <nav id="article-bottom-nav">
           <a href="#" class="link-btn btn" id="read-btn">Read 615 comments</a>
-          <ul>
+          <ul class="nav">
             <li><a class="social-media-link" href="#"><span class="social-media-icon facebook-icon"></span></a></li>
             <li><a class="social-media-link" href="#"><span class="social-media-icon whatsapp-icon"></span></a></li>
             <li><a class="social-media-link" href="#"><span class="social-media-icon twitter-icon"></span></a></li>
@@ -323,90 +323,170 @@
         </nav>
       </footer>
     </article>
-    <div>
+    <nav class="card-navs" id="card-navs">
       <div>
-
-      </div>
-      <div>
-        <section>
-          <div>
-            <h2>Suggested newsletters for you</h2>
-            <a>Don't show me this again</a>
+        <section id="suggested-newsletters" class="top-level">
+          <header>
+            <h3>Suggested newsletters for you</h3>
+            <button class="text-button small-print">Don't show me this again</button>
+          </header>
+          <div class="cards-container">
+            <article class="card newsletter-card" role="button">
+              <header>
+                <img class="thumbnail" src="https://static01.nyt.com/email-images/Newsletter%20Icons/Breaking.png" alt="Breaking News">
+                <p class="newsletters-frequency">As Needed</p>
+              </header>
+              <section>
+                <h4>Breaking News</h4>
+                <p>Alerts when important news breaks around the world.</p>
+              </section>
+              <section>
+                <a href="#">See the latest</a>
+              </section>
+            </article>
+            <article class="card newsletter-card" role="button">
+              <header>
+                <img class="thumbnail" src="https://static.nytimes.com/email-images/newsletters/AtHome/NYT-AtHome-Icon-REV.png" alt="At home newsletter">
+                <p class="newsletters-frequency">Weekly</p>
+              </header>
+              <section>
+                <h4>At Home</h4>
+                <p>
+                  Our best suggestions for how to live a full and cultured life during the pandemic, at home.
+                </p>
+              </section>
+              <section>
+                <a href="#">See the latest</a>
+              </section>
+            </article>
+            <article class="card newsletter-card" role="button">
+              <header>
+                <img class="thumbnail" src="https://static.nytimes.com/email-images/newsletters/TheMorning/TheMorning-Icon.png" alt="The morning newsletter">
+                <p class="newsletters-frequency">Daily</p>
+              </header>
+              <section>
+                <h4>The Morning</h4>
+                <p>
+                  Make sense of the day’s news and ideas. David Leonhardt and Times journalists guide you through what’s happening — and why it matters.
+                </p>
+              </section>
+              <section>
+                <a href="#">See the latest</a>
+              </section>
+            </article>
           </div>
-          <article>
-            <section>
-
-            </section>
-          </article>
-          <article>
-            <section>
-              
-            </section>
-          </article>
-          <article>
-            <section>
-              
-            </section>
-          </article>
         </section>
-        <section>
-          <h2>More in Space and Astronomy</h2>
-          <article>
-            <section>
-
-            </section>
-          </article>
-          <article>
-            <section>
-              
-            </section>
-          </article>
-          <article>
-            <section>
-              
-            </section>
-          </article>
-          <article>
-            <section>
-              
-            </section>
-          </article>
-          <article>
-            <section>
-              
-            </section>
-          </article>
+        <section class="top-level">
+          <h3><a href="#" class="inherit-color">More in Space and Astronomy</a></h3>
+          <div class="grid grid-uniform-column-3">
+            <div class="col-1 card">
+              <a href="#" class="card-link">
+                <figure class="card-banner clearfix">
+                  <img alt="Space Station 43" src="https://static01.nyt.com/images/2021/02/12/science/12VOYAGER1b/12VOYAGER1b-threeByTwoSmallAt2X.jpg?quality=75&auto=webp&disable=upscale">
+                  <figcaption class="small-print">NASA</figcaption>
+                </figure>
+                <span class="bold-link">
+                  Earth to Voyager 2: After a Year in the Darkness, We Can Talk to You Again
+                </span>
+              </a>
+              <time datetime="" class="small-print">Feb. 12</time>
+            </div>
+            <div class="col-2 card">
+              <a href="#" class="card-link">
+                <figure class="card-banner clearfix">
+                  <img alt="Mars" src="https://static01.nyt.com/images/2021/02/10/science/10MARSCHINA2/10MARSCHINA2-threeByTwoSmallAt2X.jpg?quality=75&auto=webp&disable=upscale">
+                  <figcaption class="small-print">China National Space Administration, via Reuters</figcaption>
+                </figure>
+                <span class="bold-link">China’s Mars Mission Begins Orbit of the Red Planet</span>
+              </a>
+              <time datetime="" class="small-print">Feb. 10</time>
+            </div>
+            <div class="col-4 card">
+              <a href="#" class="card-link">
+                <figure class="card-banner clearfix">
+                  <img alt="Venus" src="https://static01.nyt.com/images/2021/02/09/science/00SCI-VENUS1/00SCI-VENUS1-threeByTwoSmallAt2X.jpg?quality=75&auto=webp&disable=upscale">
+                  <figcaption class="small-print">PLANET-C Project Team/JAXA</figcaption>
+                </figure>
+                <span class="bold-link">Life on Venus? The Picture Gets Cloudier</span>
+              </a>
+              <time datetime="" class="small-print">Feb. 8</time>
+            </div>
+            <div class="col-5 card">
+              <a href="#" class="card-link">
+                <figure class="card-banner clearfix">
+                  <img alt="James Webb Space Telescope’s sunshield" src="https://static01.nyt.com/images/2021/02/02/science/02SCI-OUTTHERE-WEBB1/02SCI-OUTTHERE-WEBB1-threeByTwoSmallAt2X.jpg?quality=75&auto=webp&disable=upscale">
+                  <figcaption class="small-print">Chris Gunn/NASA</figcaption>
+                </figure>
+                <span class="bold-link">The Webb Telescope, NASA’s Golden Surfer, Is Almost Ready, Again</span>
+              </a>
+              <time datetime="" class="small-print">Feb. 3</time>
+            </div>
+            <div class="col-6 card">
+              <a href="#" class="card-link">
+                <figure class="card-banner clearfix">
+                  <img alt="Blue Origin’s New Shepard space system." src="https://static01.nyt.com/images/2021/02/04/science/03BLUEORIGIN3/merlin_154629609_5bc4ea0d-9f3e-42af-aec4-7f63a7917f44-threeByTwoSmallAt2X.jpg?quality=75&auto=webp&disable=upscale">
+                  <figcaption class="small-print">Nick Cote for The New York Times</figcaption>
+                </figure>
+                <span class="bold-link">Jeff Bezos Renews Focus on Blue Origin, Which Has Been Slower to Launch</span>
+              </a>
+              <time datetime="" class="small-print">Feb. 9</time>
+            </div>
+          </div>
         </section>
-        <section>
-          <h2>Editors' Picks</h2>
-          <article>
-            <section>
-
-            </section>
-          </article>
-          <article>
-            <section>
-              
-            </section>
-          </article>
-          <article>
-            <section>
-              
-            </section>
-          </article>
-          <article>
-            <section>
-              
-            </section>
-          </article>
-          <article>
-            <section>
-              
-            </section>
-          </article>
+        <section class="top-level">
+          <h3><a href="#" class="inherit-color">Editors’ Picks</a></h3>
+          <div class="grid grid-uniform-column-3">
+            <div class="col-1 card">
+              <a href="#" class="card-link">
+                <figure class="card-banner clearfix">
+                  <img alt="A wolverine." src="https://static01.nyt.com/images/2021/02/11/climate/00cli-wolverines/00cli-wolverines-threeByTwoSmallAt2X.jpg?quality=75&auto=webp&disable=upscale">
+                  <figcaption class="small-print">Peter Mather</figcaption>
+                </figure>
+                <span class="bold-link">They’re Arctic Survivors. How Will They Adapt to Climate Change?</span>
+              </a>
+              <time datetime="" class="small-print">8h ago</time>
+            </div>
+            <div class="col-2 card">
+              <a href="#" class="card-link">
+                <figure class="card-banner clearfix">
+                  <img alt="" src="https://static01.nyt.com/images/2021/02/12/multimedia/00covid-doctor-1/00covid-doctor-1-threeByTwoSmallAt2X.jpg?quality=75&auto=webp&disable=upscale">
+                  <figcaption class="small-print">Brandon Thibodeaux for The New York Times</figcaption>
+                </figure>
+                <span class="bold-link">The Vaccine Had to Be Used. He Used It. He Was Fired.</span>
+              </a>
+              <time datetime="" class="small-print">Feb. 12</time>
+            </div>
+            <div class="col-3 card">
+              <a href="#" class="card-link">
+                <figure class="card-banner clearfix">
+                  <img alt="Space Station 43" src="https://static01.nyt.com/images/2021/02/21/books/review/21Tepperman/21Tepperman-threeByTwoSmallAt2X.jpg?quality=75&auto=webp&disable=upscale">
+                  <figcaption class="small-print">Yoshi Sodeoka</figcaption>
+                </figure>
+                <span class="bold-link">The Most Serious Security Risk Facing the United States</span>
+              </a>
+              <time datetime="" class="small-print">Feb. 9</time>
+            </div>
+          </div>
         </section>
       </div>
-    </div>
+      <section id="most-popular" class="top-level">
+        <h3>Most Popular</h3>
+        <ul class="nav">
+          <li><a href="#" class="bold-link">
+            Amy Cooper, Who Falsely Accused Black Bird-Watcher, Has Charges Dismissed
+          </a></li>
+          <li><a class="bold-link" href="#">Was ‘60 Minutes’ TV’s Most Toxic Workplace?</a></li>
+          <li><a class="bold-link" href="#">Brayden Smith, Five-Time ‘Jeopardy!’ Champion, Dies at 24</a></li>
+          <li><a class="bold-link" href="#">Grind Your Teeth? Your Night Guard May Not Be the Right Fix</a></li>
+          <li><a class="bold-link" href="#">Walking (and Skating) on Thin Ice, Some in Europe Paid the Price</a></li>
+          <li><a class="bold-link" href="#">Woman Accused of Defaming Dozens Online Is Arrested</a></li>
+          <li><a class="bold-link" href="#">Louisiana Woman Arrested in Case of Teen Found Dead in a Field</a></li>
+          <li><a class="bold-link" href="#">Does Brad Pitt Still Sell Watches?</a></li>
+          <li><a class="bold-link" href="#">What Made the Indonesian Plane Crash? New Report Sheds Light</a></li>
+          <li><a class="bold-link" href="#">‘I’m Afraid He’s Going to Run Again and Lose,’ Lieu Says of Trump</a></li>
+        </ul>
+      </section>
+    </nav>
   </main>
   <nav>
     

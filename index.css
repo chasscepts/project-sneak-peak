@@ -32,12 +32,17 @@ a {
 
 p {
   font-family: nyt-imperial,georgia,'times new roman',times,serif;
-  /*font-family: georgia,'times new roman',times,serif;*/
   font-size: 1.35rem;
 }
 
 figure {
   margin: 0%;
+}
+
+ul.nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .narrow {
@@ -72,6 +77,12 @@ figure {
   flex: 0 0 25%;
 }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 /*////////////// Buttons, Links and Icons /////////////*/
 .logo-icon {
   width: 184px;
@@ -101,6 +112,7 @@ figure {
   color: #fff;
   font-size: 0.9rem;
   opacity: 0.8;
+  text-align: center;
 }
 .btn:hover {
   opacity: 1;
@@ -131,6 +143,12 @@ figure {
   text-align: center;
   text-decoration: none;
   color: inherit;
+}
+.text-button {
+  outline: none;
+  border: none;
+  padding: 0;
+  background: none;
 }
 
 .social-media-link {
@@ -197,6 +215,41 @@ figure {
 }
 .callouts:hover, .callouts:hover::after, .callouts:hover::before{
   border-color: #e2dfdf;
+}
+
+/*/////////////// grid ///////////////////////*/
+.grid {
+  display: grid;
+  row-gap: 30px;
+}
+.grid-uniform-column-4 {
+  grid-auto-columns: minmax(100px, 25%)
+}
+.grid-uniform-column-4 > .col-1, .grid-uniform-column-4 > .col-5 {
+  grid-column: 1;
+}
+.grid-uniform-column-4 > .col-2, .grid-uniform-column-4 > .col-6 {
+  grid-column: 2;
+}
+.grid-uniform-column-4 > .col-3, .grid-uniform-column-4 > .col-7 {
+  grid-column: 3;
+}
+.grid-uniform-column-4 > .col-4, .grid-uniform-column-4 > .col-8 {
+  grid-column: 4;
+}
+
+.grid-uniform-column-3 {
+  grid-auto-columns: minmax(100px, 32%);
+  column-gap: 2%;
+}
+.grid-uniform-column-3 > .col-1, .grid-uniform-column-3 > .col-4 {
+  grid-column: 1;
+}
+.grid-uniform-column-3 > .col-2, .grid-uniform-column-3 > .col-5 {
+  grid-column: 2;
+}
+.grid-uniform-column-3 > .col-3, .grid-uniform-column-3 > .col-6 {
+  grid-column: 3;
 }
 
 /*////////////// main header ////////////////////////*/
@@ -291,24 +344,6 @@ figcaption .credit, .caption .credit {
 p.narrow {
   margin-bottom: 15px;
 }
-.grid {
-  display: grid;
-}
-.grid-uniform-column-4 {
-  grid-auto-columns: minmax(100px, 25%)
-}
-.grid-uniform-column-4 > .col-1, .grid-uniform-column-4 > .col-5 {
-  grid-column: 1;
-}
-.grid-uniform-column-4 > .col-2, .grid-uniform-column-4 > .col-6 {
-  grid-column: 2;
-}
-.grid-uniform-column-4 > .col-3, .grid-uniform-column-4 > .col-7 {
-  grid-column: 3;
-}
-.grid-uniform-column-4 > .col-4, .grid-uniform-column-4 > .col-8 {
-  grid-column: 4;
-}
 .inflation-illustration-fig {
   padding: 10px;
 }
@@ -358,4 +393,123 @@ p.narrow {
 }
 #article-bottom-nav > ul > li {
   list-style: none;
+}
+
+/*/////////// card navs /////////////*/
+#card-navs {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 70px;
+}
+#card-navs > section {
+  flex: 0 0 25%;
+  margin-left: 30px;
+}
+#card-navs section.top-level {
+  border-top: 1px solid rgb(26, 28, 31);
+  margin-top: 30px;
+}
+#card-navs > div {
+  flex: 1;
+}
+
+#card-navs h3 {
+  font-size: 1.1rem;
+}
+#card-navs a {
+  text-decoration: none;
+}
+
+#most-popular li {
+  padding: 15px 0;
+  border-top: 1px solid rgb(220 210 210);
+}
+
+.bold-link {
+  display: block;
+  color: black;
+  text-decoration: none;
+  font-family: nyt-imperial,georgia,'times new roman',times,serif;
+  font-size: 1.35rem;
+  transition: all 0.3s ease-in-out;
+}
+.bold-link:hover {
+  color: gray;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+}
+.cards-container > .card {
+  flex: 0 0 32%;
+  height: 100%;
+  position: relative;
+}
+#suggested-newsletters > header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.newsletter-card {
+  padding: 10px;
+  border: 1px solid rgb(226 215 215);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.newsletter-card::after {
+  content: "+";
+  font-weight: bold;
+  display: block;
+  padding: 5px 10px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  color: #000;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  transition: all 0.3s ease-in-out;
+}
+.newsletter-card:hover{
+  box-shadow: 0 0 8px 0px;
+}
+.newsletter-card:hover::after{
+  background-color: #000;
+  color: #fff;
+}
+.newsletter-card h4 {
+  margin: 0;
+  font-size: 1.2rem
+}
+.newsletter-card p {
+  margin: 0;
+  font-size: 1.0rem;
+  color: #676363;
+}
+.thumbnail {
+  display: block;
+  width: 80px;
+}
+.newsletters-frequency{
+  color: gray;
+  margin: 10px 0 0;
+  text-transform: uppercase;
+}
+.newsletter-card p.newsletters-frequency {
+  font-size: 0.8rem;
+  margin-top: 10px;
+}
+
+.card-link {
+  text-decoration: none;
+}
+.card-banner img {
+  display: block;
+  width: 100%;
+}
+.card-banner figcaption {
+  float: right;
+}
+.card time {
+  display: block;
 }
