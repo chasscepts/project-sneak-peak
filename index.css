@@ -45,6 +45,10 @@ ul.nav {
   padding: 0;
 }
 
+ul.horizontal li {
+  display: inline-block;
+}
+
 .narrow {
   display: block;
   width: 50%;
@@ -85,6 +89,7 @@ ul.nav {
   clear: both;
   display: table;
 }
+
 
 /*////////////// Buttons, Links and Icons /////////////*/
 .logo-icon {
@@ -167,7 +172,7 @@ ul.nav {
 .social-media-link:hover  {
   background-color: #fff;
 }
-.social-media-icon{
+.social-media-icon {
   display: block;
   width: 16px;
   height: 16px;
@@ -226,9 +231,9 @@ ul.nav {
   row-gap: 30px;
 }
 .grid-uniform-column-4 {
-  grid-auto-columns: minmax(100px, 25%)
+  grid-auto-columns: minmax(100px, 25%);
 }
-.grid-uniform-column-4 > .col-1, .grid-uniform-column-4 > .col-5 {
+.grid-uniform-column-4 >.col-1, .grid-uniform-column-4 > .col-5 {
   grid-column: 1;
 }
 .grid-uniform-column-4 > .col-2, .grid-uniform-column-4 > .col-6 {
@@ -344,6 +349,9 @@ figcaption .credit, .caption .credit {
 
 
 /*//////////////////// main article sections /////////////////*/
+.main-article a:hover {
+  text-decoration: none;
+}
 p.narrow {
   margin-bottom: 15px;
 }
@@ -477,7 +485,7 @@ p.narrow {
   right: 15px;
   transition: all 0.3s ease-in-out;
 }
-.newsletter-card:hover{
+.newsletter-card:hover {
   box-shadow: 0 0 8px 0px;
 }
 .newsletter-card:hover::after{
@@ -497,7 +505,7 @@ p.narrow {
   display: block;
   width: 80px;
 }
-.newsletters-frequency{
+.newsletters-frequency {
   color: gray;
   margin: 10px 0 0;
   text-transform: uppercase;
@@ -654,4 +662,35 @@ p.narrow {
   content: '\039B';
   position: absolute;
   right: -40PX;
+}
+
+
+/*///////////////// main-aside  /////////////////*/
+.main-aside {
+  position: absolute;
+  width: 16%;
+  top: 1500px;
+  right: 40px;
+  margin-right: 40px;
+}
+.main-aside h2 {
+  margin: 0;
+  padding: 15px 0;
+}
+.main-aside li {
+  margin-top: 15px;
+}
+.main-aside-link {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  text-decoration: none;
+  font-family: nyt-cheltenham-small, georgia, "times new roman";
+}
+.main-aside-link:hover {
+  text-decoration: underline;
+}
+.main-aside-link > span {
+  width: calc(100% - 100px);
+  padding-left: 10px;
 }
