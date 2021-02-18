@@ -313,9 +313,36 @@
         <section id="comment-section" class="bordered padded-15 slideup closed">
           <h2 class="form-header">Add Your Comment</h2>
           <form method="POST" action="#" enctype="application/x-www-form-urlencoded">
-            <textarea id="comment" class="comment padded-15"></textarea>
+            <label>
+              Name
+              <input type="text" maxlength="20" required>
+            </label>
+            <label>
+              Email 
+              <input type="email" maxlength="20" required>
+            </label>
+            <textarea id="comment" class="comment padded-15" maxlength="200"></textarea>
+            <fieldset>
+              <legend>What is your overall opinion about this article?</legend>
+              <label>
+                <input type="radio" name="opinion" value="positive">
+                <span class="label inline">Positive</span>
+              </label>
+              <label>
+                <input type="radio" name="opinion" value="negative">
+                <span class="label inline">Negative</span>
+              </label>
+              <label>
+                <input type="radio" name="opinion" value="neutral">
+                <span class="label inline">Neutral</span>
+              </label>
+            </fieldset>
+            <label>
+              <input type="checkbox" name="subscribe">
+              <span class="label inline">I want to subscribe to the newsletter</span>
+            </label>
             <div class="mt-15 flex end padded-5">
-              <button type="submit" id="comment-submit-btn" class="form-control link-btn btn">Submit</button>
+              <button type="submit" id="comment-submit-btn" class="form-control link-btn btn">Send</button>
               <button type="reset" id="comment-cancel-btn" class="form-control link-btn btn">Cancel</button>
             </div>
           </form>
