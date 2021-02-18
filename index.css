@@ -31,6 +31,14 @@ html {
   box-sizing: border-box;
 }
 
+/* ////////////// inputs /////////////// */
+
+input,
+textarea,
+button {
+  outline: none;
+}
+
 /* ////////////// font ///////////////// */
 
 .inherit-color {
@@ -128,6 +136,10 @@ ul.horizontal li {
 
 .mt-15 {
   margin-top: 15px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
 }
 
 .bordered {
@@ -855,6 +867,17 @@ p.narrow {
   display: none;
 }
 
+.comment-section input[type="text"],
+.comment-section input[type="email"] {
+  display: block;
+  width: 100%;
+  padding: 7px;
+}
+
+.comment-section label {
+  display: block;
+}
+
 /* //////////////// misc ///////////// */
 
 .slideup {
@@ -865,6 +888,10 @@ p.narrow {
 
 .slideup.md {
   max-height: 300px;
+}
+
+.slideup.lg {
+  max-height: 800px;
 }
 
 .slideup.closed {
