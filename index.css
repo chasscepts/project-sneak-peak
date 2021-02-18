@@ -31,6 +31,14 @@ html {
   box-sizing: border-box;
 }
 
+/* ////////////// inputs /////////////// */
+
+input,
+textarea,
+button {
+  outline: none;
+}
+
 /* ////////////// font ///////////////// */
 
 .inherit-color {
@@ -102,6 +110,14 @@ ul.horizontal li {
 
 /* ////////////// margin and padding ///////////// */
 
+.padded-15 {
+  padding: 15px;
+}
+
+.padded-5 {
+  padding: 5px;
+}
+
 .pl-5 {
   padding-left: 5px;
 }
@@ -112,6 +128,22 @@ ul.horizontal li {
 
 .mb-5 {
   margin-bottom: 5px;
+}
+
+.mb-50 {
+  margin-right: 50px;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.bordered {
+  border: 1px solid rgb(222 228 230);
 }
 
 .border-bt {
@@ -137,6 +169,10 @@ ul.horizontal li {
 
 .space-between {
   justify-content: space-between;
+}
+
+.flex.end {
+  justify-content: flex-end;
 }
 
 .flex-1 {
@@ -169,6 +205,7 @@ ul.horizontal li {
   font-size: 1.2rem;
   font-weight: 900;
   margin-right: 5px;
+  cursor: pointer;
 }
 
 .link-btn:last-child {
@@ -189,6 +226,8 @@ ul.horizontal li {
   font-size: 0.9rem;
   opacity: 0.8;
   text-align: center;
+  outline: none;
+  border: none;
 }
 
 .btn:hover {
@@ -243,6 +282,10 @@ ul.horizontal li {
   border-radius: 50%;
   margin-right: 20px;
   background-color: #ebeef3;
+}
+
+.social-media-link.last-child {
+  margin-right: 0;
 }
 
 .social-media-link:hover {
@@ -501,11 +544,6 @@ p.narrow {
   justify-content: center;
   align-items: center;
   margin: 25px auto;
-}
-
-#read-btn {
-  flex: 1;
-  margin-right: 50px;
 }
 
 #article-bottom-nav > ul {
@@ -799,4 +837,65 @@ p.narrow {
 .main-aside-link > span {
   width: calc(100% - 100px);
   padding-left: 10px;
+}
+
+/* /////////// comment form ////////// */
+
+.form-header {
+  margin: 0 0 10px;
+  font-size: 1.1rem;
+  color: #3e5267;
+}
+
+.comment {
+  display: block;
+  width: 100%;
+  height: 300px;
+  resize: none;
+  outline: none;
+}
+
+.form-control {
+  margin-right: 10px;
+}
+
+.form-control:last-child {
+  margin-right: 0;
+}
+
+.form-control.hide {
+  display: none;
+}
+
+.comment-section input[type="text"],
+.comment-section input[type="email"] {
+  display: block;
+  width: 100%;
+  padding: 7px;
+}
+
+.comment-section label {
+  display: block;
+}
+
+/* //////////////// misc ///////////// */
+
+.slideup {
+  max-height: 500px;
+  overflow: hidden;
+  transition: max-height 0.3s linear;
+}
+
+.slideup.md {
+  max-height: 300px;
+}
+
+.slideup.lg {
+  max-height: 800px;
+}
+
+.slideup.closed {
+  max-height: 0;
+  border-width: 0;
+  padding: 0;
 }

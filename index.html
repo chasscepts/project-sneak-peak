@@ -5,6 +5,7 @@
   <title>Project Sneak Peak</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="index.css">
+  <script src="index.js"></script>
 </head>
 <body>
   <header class="main-header border-bt">
@@ -309,15 +310,55 @@
         <p class="caption small-print">
           A version of this article appears in print on March 18, 2014, Section A, Page 1 of the New York edition with the headline: Space Ripples Reveal Big Bang’s Smoking Gun. <a href="#" class="inherit-color plain-on-hover">Order Reprints</a> | <a href="#" class="inherit-color plain-on-hover">Today’s Paper</a> | <a href="#" class="inherit-color plain-on-hover">Subscribe</a>
         </p>
+        <section id="comment-section" class="bordered padded-15 slideup lg closed comment-section">
+          <h2 class="form-header">Add Your Comment</h2>
+          <form method="POST" action="#" enctype="application/x-www-form-urlencoded">
+            <label class="mt-15">
+              Name
+              <input class="bordered" type="text" name="name" maxlength="20" required>
+            </label>
+            <label class="mt-15 mb-15">
+              Email 
+              <input class="bordered" type="email" name="email" maxlength="20" required>
+            </label>
+            <textarea id="comment" class="comment padded-15" name="comment" maxlength="200" placeholder="Type your comment here"></textarea>
+            <fieldset class="mt-15 mb-15">
+              <legend>What is your overall opinion about this article</legend>
+              <label>
+                <input type="radio" name="opinion" value="positive">
+                <span class="label inline">Positive</span>
+              </label>
+              <label class="mt-15">
+                <input type="radio" name="opinion" value="negative">
+                <span class="label inline">Negative</span>
+              </label>
+              <label class="mt-15">
+                <input type="radio" name="opinion" value="neutral">
+                <span class="label inline">Neutral</span>
+              </label>
+            </fieldset>
+            <label>
+              <input type="checkbox" name="subscribe">
+              <span class="label inline">I want to subscribe to the newsletter</span>
+            </label>
+            <div class="mt-15 flex end padded-5">
+              <button type="submit" id="comment-submit-btn" class="form-control link-btn btn">Send</button>
+              <button type="reset" id="comment-cancel-btn" class="form-control link-btn btn">Cancel</button>
+            </div>
+          </form>
+        </section>
         <nav id="article-bottom-nav">
-          <a href="#" class="link-btn btn" id="read-btn">Read 615 comments</a>
+          <div class="flex space-between flex-1 mb-50">
+            <button type="button" id="add-comment-btn" class="link-btn btn form-control flex-1">Add Comment</button>
+            <a id="read-btn" class="link-btn btn flex-1" href="#">Read 615 comments</a>
+          </div>
           <ul class="nav">
             <li><a class="social-media-link" href="#"><span class="social-media-icon facebook-icon"></span></a></li>
             <li><a class="social-media-link" href="#"><span class="social-media-icon whatsapp-icon"></span></a></li>
             <li><a class="social-media-link" href="#"><span class="social-media-icon twitter-icon"></span></a></li>
             <li><a class="social-media-link" href="#"><span class="social-media-icon email-icon"></span></a></li>
             <li>
-              <a class="social-media-link" href="#"><span class="social-media-icon more-share-icon"></span></a>
+              <a class="social-media-link last-child" href="#"><span class="social-media-icon more-share-icon"></span></a>
             </li>
           </ul>
         </nav>
